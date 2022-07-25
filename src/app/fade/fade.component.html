@@ -1,0 +1,21 @@
+
+<h3 class="mx-auto" style="width: 500px; margin: 100px;" >Fade-In and Fade-Out animation</h3>
+<div class="container" style="margin-left:500px ;">
+  <div class = "row">
+    <div class="col-md-4">
+      <button class="btn btn-success" (click)="fadeIn()">Fade In</button>
+    </div>
+    <div class="col-md-4">
+      <button class="btn btn-danger" (click)="fadeOut()">Fade Out</button>
+    </div>
+  </div>
+  <div class="row">
+    <div style="width:400px; margin-left: 120px">
+    <ul>
+      <li *ngFor="let list of fadeItem" [@fadeInOut] class="fs-2">
+        {{list}}
+      </li>
+    </ul>
+  </div>
+  </div>
+</div>
